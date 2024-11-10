@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Arrivals - Bookstore</title>
+    <link rel="website icon" type="png" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #4CAF50;
+            font-size: 2.5em;
+            margin: 20px 0;
+        }
+
+        .arrivals_box {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+            justify-content: center;
+        }
+
+        .arrivals_card {
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: calc(25% - 20px);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .arrivals_card:hover {
+            transform: scale(1.05);
+        }
+
+        .arrivals_image img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .arrivals_tag {
+            padding: 15px;
+            color: #333;
+        }
+
+        .arrivals_tag p {
+            font-size: 1.1em;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        .arrivals_icon {
+            color: #FFD700;
+            margin: 10px 0;
+        }
+
+        .arrivals_btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .arrivals_btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Back to Home Button */
+        .home_btn {
+            display: block;
+            width: 150px;
+            margin: 30px auto;
+            padding: 10px 20px;
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.1em;
+            transition: background-color 0.3s;
+        }
+
+        .home_btn:hover {
+            background-color: #45a049;
+        }
+        .new-arrival-paragraph {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.8;
+    text-align: justify;
+    margin: 20px;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.new-arrival-paragraph:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 8px 12px rgba(0, 0, 0, 0.15);
+}
+
+.new-arrival-paragraph a {
+    color: #007BFF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.new-arrival-paragraph a:hover {
+    text-decoration: underline;
+}
+
+    </style>
+</head>
+<body>
+    <h1>New Arrivals</h1>
+
+    <div class="new-arrival-paragraph">
+        Welcome to our New Arrivals section! We are excited to bring you the latest and greatest in our
+         bookstore, with a diverse range of genres to cater to every reader’s taste. For those who love a
+          thrill, our horror books will send chills down your spine, filled with eerie tales, haunted places,
+           and unexplainable mysteries that will keep you up late at night. If adventure is what you seek,
+            our collection of travel books will take you to far-off places, from bustling cities to remote 
+            landscapes, allowing you to experience the world through the eyes of seasoned explorers. 
+            And for those looking to relax and unwind, we have a fantastic array of store books, from 
+            feel-good novels to inspiring biographies, perfect for any mood. No matter your preference, 
+            our new arrivals are sure to offer something for everyone. Come explore the latest books and 
+            find your next great read today!
+    </div>
+    
+    <div class="arrivals_box">
+        
+        <!-- Example arrival card -->
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_1.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_2.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_3.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_4.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_5.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_6.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_7.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_8.webp" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_9.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        <div class="arrivals_card">
+            <div class="arrivals_image">
+                <img src="image/arrival_10.jpg" alt="Arrival 1">
+            </div>
+            <div class="arrivals_tag">
+                <p>New Arrivals</p>
+                <div class="arrivals_icon">
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star"></i>
+                    <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <a href="#" class="arrivals_btn">Learn More</a>
+            </div>
+        </div>
+        
+        <!-- More arrival cards as needed -->
+
+    </div>
+
+    <!-- Back to Home Button -->
+    <a href="index.html" class="home_btn">Back to Home</a>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</body>
+</html>
+

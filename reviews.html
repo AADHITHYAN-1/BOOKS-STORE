@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reviews - Bookstore</title>
+    <link rel="website icon" type="png" href="image/logo.png">
+    <link rel="stylesheet" href="style.css">
+
+<style>
+
+.all{
+    background-color: #a76c6c;
+}
+.bookstore-reviews {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.1em;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    margin-top: 20px;
+    background-color: #f0f8ff; /* Light blue background */
+    border: 1px solid #a76c6c;
+    border-radius: 8px;
+}
+
+.bookstore-reviews p {
+    margin-bottom: 15px;
+}
+
+.bookstore-reviews p:last-child {
+    margin-bottom: 0;
+}
+
+.bookstore-reviews p::before {
+    content: '“';
+    font-size: 1.8em;
+    color: #333;
+    margin-right: 5px;
+}
+
+.bookstore-reviews p::after {
+    content: '”';
+    font-size: 1.8em;
+    color: #333;
+    margin-left: 5px;
+}
+
+.bookstore-reviews p span {
+    font-size: 1em;
+    font-weight: bold;
+    color: #555;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 2.5em;
+    text-align: center;
+    color: #333;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+h3 {
+    font-family: 'Arial', sans-serif;
+    font-size: 1.5em;
+    text-align: center;
+    color: #555;
+    margin-top: 10px;
+    font-weight: normal;
+}
+
+pre {
+    background-color: #9aa8b4; /* Light blue background for pre */
+    padding: 15px;
+    border-radius: 8px;
+    margin: 20px auto;
+    width: fit-content;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 1.2em;
+    color: #333;
+    line-height: 1.6;
+}
+/* General Styles for the Reviews Section */
+.reviews {
+    padding: 50px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.reviews h1 {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 40px;
+}
+
+/* Review Box */
+.review_box {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+/* Individual Review Card */
+.review_card {
+    background-color: white;
+    width: 280px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: left;
+    position: relative;
+}
+
+.review_card .fa-quote-right {
+    font-size: 24px;
+    color: #ccc;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.card_top img {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    font-size: 20px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.card p {
+    font-size: 14px;
+    color: #777;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Rating Stars */
+.review_icon {
+    display: flex;
+    gap: 5px;
+}
+
+.review_icon i {
+    color: #f39c12;
+    font-size: 16px;
+}
+
+/* Hover Effects for Review Cards */
+.review_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.review_card:active {
+    transform: translateY(1px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .review_box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review_card {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+/* Back to Home Button */
+.home_btn {
+    display: inline-block;
+    background-color: #3498db; /* Button Color */
+    color: #fff; /* Text Color */
+    padding: 50px 20px; /* Button Padding */
+    text-decoration: none; /* Remove Underline */
+    font-size: 16px; /* Font Size */
+    font-weight: 600; /* Font Weight */
+    border-radius: 5px; /* Rounded Corners */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Smooth Transitions */
+}
+
+.home_btn:hover {
+    background-color: #2980b9; /* Darker Blue on Hover */
+    transform: scale(1.05); /* Slightly enlarge the button */
+}
+
+.home_btn:active {
+    transform: scale(1); /* Reset scale when button is pressed */
+}
+
+
+</style>
+<div class="all">
+<h1>welcome to all</h1>
+<h3>See the people's reviews</h3>
+
+
+<div class="bookstore-reviews">
+    <p>"I absolutely love this bookstore! The selection is incredible, and I always find something new and exciting to read. The staff is friendly and knowledgeable, which makes the shopping experience even better!" – Sarah L.</p>
+    <p>"A hidden gem! I’ve been coming here for years, and I always leave with a handful of great books. Whether you’re into fiction, non-fiction, or something in between, this bookstore has it all!" – Mark T.</p>
+    <p>"This is my go-to place for books. The ambiance is so cozy, and the staff is always helpful. Plus, I love how they have so many book signings and events throughout the year." – Jessica W.</p>
+    <p>"One of the best bookstores I’ve visited. The variety of genres is amazing, and I can always find a book that suits my mood. Highly recommend for any book lover!" – David P.</p>
+    <p>"I can spend hours in this bookstore just browsing. They have the best selection of rare books and unique titles. I always leave with something I can’t wait to read." – Emily R.</p>
+    <p>"Every time I visit, I find something new! The staff is so passionate about books, and they are always ready to recommend something based on my preferences." – John M.</p>
+</div>
+
+</div>
+<div class="reviews">
+    <h1>reviews</h1>
+    <div class="review_box">
+        
+        <div class="review_card">
+            <i class="fa-solid fa-quote-right"></i>
+            <div class="card_top">
+                <img src="image/review_1.png">
+            </div>
+            <div class="card">
+                <h2>join doe</h2>
+                <p>This bookstore offers a wide selection of books, friendly staff, cozy atmosphere, and regular events.
+                     It's a perfect place for book lovers to explore and enjoy.
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+            </div>
+        </div>
+        <div class="review_card">
+            <i class="fa-solid fa-quote-right"></i>
+            <div class="card_top">
+                <img src="image/review_2.png">
+            </div>
+            <div class="card">
+                <h2>BENLY</h2>
+                <p>This bookstore offers an incredible variety of books for every taste—fiction, non-fiction, 
+                    , romance, and more. With friendly staff and a cozy atmosphere, it’s the perfect place for book
+                     lovers. Discover inspiring heroes, gripping adventures, and timeless classics.
+                     Whether you're a casual reader or a book enthusiast, this store has it all!
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+            </div>
+        </div>
+
+        <div class="review_card">
+            <i class="fa-solid fa-quote-right"></i>
+            <div class="card_top">
+                <img src="image/review_3.png">
+            </div>
+            <div class="card">
+                <h2>JOINWIKE</h2>
+                <p>This bookstore offers an incredible selection of books, each one carefully chosen to 
+                    ensure quality and variety. Whether you're looking for thrillers, romances, or non-fiction
+                    , the collection is outstanding. The service is friendly, and the 
+                    atmosphere is welcoming, making it a fantastic place for book lovers.
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+            </div>
+        </div>
+        <div class="review_card">
+            <i class="fa-solid fa-quote-right"></i>
+            <div class="card_top">
+                <img src="image/review_4.png">
+            </div>
+            <div class="card">
+                <h2>eran</h2>
+                <p>This bookstore is truly a one-stop shop, offering everything a reader could ask for. From bestsellers to 
+                    hidden gems, it has a vast collection of books across all genres. The store provides amazing deals,
+                     excellent customer service, and a cozy environment—making
+                     it the perfect place to find your next great read!
+                    </p>
+                    <div class="review_icon">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<br>
+<br>
+<a href="index.html" class="home_btn">Back to Home</a>
+

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - BOOKS STORE</title>
+    <link rel="icon" type="image/png" href="image/logo.png">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f2f2f2;
+        }
+
+        .login-container {
+            width: 300px;
+            margin: 100px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .login-container h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .input-group {
+            margin-bottom: 15px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        .login-btn:hover {
+            background-color: #45a049;
+        }
+
+        /* Popup styling */
+        .popup {
+            display: none;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            padding: 20px;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 8px;
+            text-align: center;
+            font-size: 18px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .popup.active {
+            display: block;
+        }
+
+        /* Style the back-to-home button */
+        button {
+            background-color: #4CAF50; /* Green background */
+            color: white; /* White text */
+            padding: 10px 20px; /* Padding inside the button */
+            border: none; /* Remove default button border */
+            border-radius: 5px; /* Rounded corners */
+            cursor: pointer; /* Pointer cursor on hover */
+            font-size: 16px; /* Font size */
+            text-align: center;
+            display: inline-block; /* Align with text */
+            margin-top: 10px;
+        }
+
+        button a {
+            color: white; /* White text for the link */
+            text-decoration: none; /* Remove underline */
+        }
+
+        button:hover {
+            background-color: #4CAF50; /* Darker green on hover */
+        }
+
+        /* Optional: Focus effect for better accessibility */
+        button:focus {
+            outline: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="login-container">
+        <h2>Login</h2>
+        <form id="loginForm" onsubmit="return showPopup()">
+            <div class="input-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="input-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" required>
+            </div>
+            <button type="submit" class="login-btn">LOGIN</button>
+            <button type="button"><a href="index.html">Back to Home</a></button>
+        </form>
+    </div>
+
+    <!-- Success Popup -->
+    <div id="popup" class="popup">
+        <p>Login Successful!</p>
+        <button onclick="redirectToIndex()">OK</button>
+    </div>
+
+    <script>
+        // Function to show the popup on successful login
+        function showPopup() {
+            // Prevent form submission to keep the page from reloading
+            event.preventDefault();
+
+            // Display the success popup
+            document.getElementById('popup').classList.add('active');
+        }
+
+        // Function to close the popup and redirect to the index page
+        function redirectToIndex() {
+            // Close the popup
+            document.getElementById('popup').classList.remove('active');
+
+            // Redirect to the index page
+            window.location.href = "index.html"; 
+        }
+    </script>
+
+</body>
+
+</html>

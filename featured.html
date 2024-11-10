@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FEATURED - Bookstore</title>
+    <link rel="website icon" type="png" href="image/logo.png">
+<style>
+    /* Style for Introductory Paragraph */
+.intro_paragraph {
+    max-width: 900px;
+    margin: 30px auto;
+    padding: 30px 40px;
+    background-color: #fdfdfd;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    font-family: 'Georgia', serif; /* Elegant font */
+    font-size: 1.2em;
+    line-height: 1.75;
+    color: #333;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.intro_paragraph:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+}
+
+.intro_paragraph p {
+    margin-bottom: 20px;
+    text-indent: 2em; /* Adds a small indentation to the first line of each paragraph */
+}
+
+.intro_paragraph p::first-letter {
+    font-size: 2.5em;
+    color: #3498db;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+    line-height: 1;
+}
+
+.intro_paragraph p:last-child {
+    margin-bottom: 0;
+}
+
+.intro_paragraph blockquote {
+    font-style: italic;
+    color: #777;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 4px solid #3498db;
+}
+
+.intro_paragraph .highlight {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.intro_paragraph .cta {
+    text-align: center;
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.intro_paragraph .cta:hover {
+    background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .intro_paragraph {
+        padding: 20px;
+        font-size: 1.1em;
+    }
+
+    .intro_paragraph p {
+        margin-bottom: 15px;
+    }
+}
+/* Style for Heading (h1) */
+h1 {
+    font-family: 'Arial', sans-serif;
+    font-size: 3em;
+    font-weight: 700;
+    text-align: center;
+    color: #2c3e50;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    padding: 10px 20px;
+    background: linear-gradient(90deg, #3498db, #e74c3c);
+    -webkit-background-clip: text;
+    color: transparent;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out, color 0.3s ease;
+}
+
+h1:hover {
+    transform: scale(1.1);
+    color: #2c3e50;
+}
+
+h1:before {
+    content: '';
+    display: block;
+    width: 50px;
+    height: 3px;
+    background-color: #3498db;
+    margin: 0 auto 15px;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+}
+.book-genres {
+    font-family: 'Arial', sans-serif;
+    margin: 0 auto;
+    max-width: 900px;
+    padding: 20px;
+    color: #333;
+    background-color: #f9f9f9;
+}
+
+.book-genres h2 {
+    text-align: center;
+    font-size: 30px;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.book-genres p {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.horror-books {
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-left: 5px solid #e74c3c;
+    font-style: italic;
+}
+
+.travel-books {
+    background-color: #eaf2f8;
+    padding: 15px;
+    border-left: 5px solid #3498db;
+    font-style: italic;
+}
+
+.entertainment-books {
+    background-color: #fff3e6;
+    padding: 15px;
+    border-left: 5px solid #f39c12;
+    font-style: italic;
+}
+
+.variety-books {
+    background-color: #e8f5e9;
+    padding: 15px;
+    border-left: 5px solid #2ecc71;
+    font-style: italic;
+}
+
+.journey-books {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-left: 5px solid #9b59b6;
+    font-style: italic;
+}
+
+.book-genres p span {
+    font-weight: bold;
+    color: #e74c3c;
+}
+
+.back_to_home {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.back_btn {
+    background-color: #3498db; /* Blue background */
+    color: white; /* White text */
+    padding: 15px 30px; /* Padding around the text */
+    font-size: 18px; /* Font size */
+    font-weight: bold; /* Bold text */
+    text-decoration: none; /* Remove underline */
+    border-radius: 5px; /* Rounded corners */
+    transition: background-color 0.3s ease; /* Smooth background color transition */
+}
+
+.back_btn:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+.back_btn:active {
+    background-color: #1f618d; /* Even darker blue when the button is pressed */
+}
+
+
+
+</style>
+<h1>welcome to featured page</h1>
+
+
+<div class="intro_paragraph">
+    <p>
+        Welcome to our <span class="highlight">Featured Books Collection</span>, where a world of imagination, discovery, and emotion awaits you. This selection celebrates stories that not only entertain but also enrich, spanning across genres that appeal to every reader. Whether you’re in the mood for a suspenseful thriller, a heartwarming romance, or a journey through historical landscapes, each book promises an experience that lingers long after the last page is turned. Our selection showcases diverse voices and perspectives, encouraging readers to step into different worlds, confront intriguing mysteries, or explore the beauty of human connection in all its forms.
+    </p>
+    
+    <p>
+        Imagine entering realms where mythical creatures roam, where heroes face impossible challenges, and where every chapter unfolds a new surprise. In our selection, you’ll find stories that push boundaries, novels that challenge ideas, and tales that transport you to places unknown. For those who seek thrilling adventures, our mystery and thriller novels will keep you guessing until the end. Meanwhile, fans of romance will discover love stories that warm the heart, from enduring classics to fresh narratives about finding love in unexpected places.
+    </p>
+    
+    <p>
+        Non-fiction enthusiasts can explore real-life stories that inspire, inform, and provoke thought. These books open windows to the experiences of visionaries, adventurers, scientists, and everyday people who’ve accomplished extraordinary feats. Each non-fiction work is an opportunity to learn, grow, and gain new perspectives on topics that shape our world, from history and politics to science and art. Our collection doesn’t stop at adult fiction and non-fiction; we also have enchanting tales for young readers, brimming with whimsy and lessons that foster creativity and curiosity.
+    </p>
+    
+    <p>
+        Beyond entertainment, our featured books encourage reflection, empathy, and understanding. Literature has the power to challenge assumptions, awaken new ideas, and help us appreciate the diversity of human experience. With every book in this collection, you’re invited to discover not only new stories but also to explore deeper questions about life, identity, and purpose. Let our featured books be your companions on journeys that expand your mind, stir your heart, and remind you of the timeless joy of reading.
+    </p>
+    
+    <p>
+        Explore our collection and let the adventure begin!
+    </p>
+
+    <a href="#explore" class="cta">Explore Now</a>
+</div>
+<div class="book-genres">
+    <h2>Explore Our Diverse Book Collection</h2>
+    <p class="horror-books">
+
+        In the world of literature, there is a book for every mood, every taste, and every adventure you seek. If you’re in the mood for spine-chilling thrills and nights filled with suspense, our horror books will immerse you in the darkest corners of the human psyche. These tales, filled with haunted houses, restless spirits, and unimaginable horrors, will keep you awake long into the night, wondering if you are truly safe. The tension builds with every turn of the page, and the characters you encounter will face their deepest fears, confronting the unknown in ways that leave you breathless. Whether it’s the supernatural or psychological terror, horror books take you on a journey to explore the darkest parts of the imagination, where every sound in the house seems to be a whisper of danger.
+    </p>
+
+    <p class="travel-books">
+        For those with an adventurous spirit and a love of discovery, our travel books offer an opportunity to explore the world without leaving the comfort of your home. From the bustling streets of ancient cities to the serene beauty of isolated landscapes, these books provide a window into the diverse cultures, traditions, and wonders of the world. Each page transports you to distant lands, where you can experience the breathtaking beauty of nature, the vibrancy of foreign cities, and the fascinating stories of the people who live there. Whether it’s trekking through the Amazon rainforest, wandering through the temples of Kyoto, or sailing across the Mediterranean, travel books provide a sense of wanderlust, inviting readers to dream of their next great adventure.
+    </p>
+
+    <p class="entertainment-books">
+        For a lighter experience, our entertainment books offer a delightful escape from everyday life. These books range from feel-good novels to celebrity biographies, offering a mix of humor, drama, and engaging storytelling. They are perfect for those who seek stories that entertain, making them laugh, cry, or cheer for the characters they grow to love. Whether it’s a captivating romance, a humorous family drama, or the latest tale from a beloved author, entertainment books are designed to captivate readers and transport them into worlds where joy, emotion, and excitement take center stage. These books are perfect for when you want to unwind, lose yourself in a good story, and leave the stresses of daily life behind.
+    </p>
+
+    <p class="variety-books">
+        But the beauty of our collection doesn’t stop there. We also have books in a variety of genres, from thrillers that will keep you on the edge of your seat, to mystery novels that will have you piecing together clues, to sci-fi adventures that take you into distant galaxies and alternate realities. Our collection is carefully curated to cater to all tastes, ensuring that there’s a book for everyone, whether you’re looking to be frightened, to travel, or to simply be entertained. Each book brings its own unique experience, offering stories that will evoke emotions, spark curiosity, and provide you with hours of immersive entertainment. From historical fiction that transports you to the past, to non-fiction books that educate and inform, our library is a treasure trove of narratives that will challenge, uplift, and entertain you.
+    </p>
+
+    <p class="journey-books">
+        No matter the genre, each of these books has the power to take you on a journey, whether it’s through the mind of a haunted character, the streets of an exotic city, or the life of a celebrity. As you turn the pages, you’re bound to find stories that resonate with you, that leave a lasting impression, and that become a cherished part of your reading experience.
+    </p>
+</div>
+
+<div class="back_to_home">
+    <a href="index.html" class="back_btn">Back to Home</a>
+</div>
+
+    
+    </div>
+</div>
